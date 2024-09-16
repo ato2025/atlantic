@@ -1,0 +1,86 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+body{
+  overflow-x: hidden !important;
+  width: 100vw;
+  background-color: var(--layoutBg);
+}
+*{
+  font-family: outfit ;
+}
+.cp{
+  cursor: pointer;
+}
+
+.fCenter{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.t05{
+  transition: all .5s;
+}
+.t07{
+  transition: all .7s;
+}
+.t2{
+  transition: all 2s;
+}
+:root {
+  --color-bg-main: #1A1A1A; 
+  --color-bg-subMain: #3f3e3e;
+  --main-purple:#7762CC;
+  --text-primary:#1F2227;
+  --text-secondary:#757A82;
+  --color-disable:#757A82;
+  --layoutBg:#F3F4F5;
+  --modalBg:#323842;
+  --borderColor:#7762CC;
+}
+
+[data-theme='dark'] {
+  --foreground: rgb(184, 186, 58);
+  --main-purple:#957BFF;
+  --text-primary:#F3F4F5;
+  --text-secondary:#D4D6D9;
+  --color-disable:#757A82;
+  --layoutBg:#23272E;
+  --modalBg:#323842;
+  --borderColor:#ffffff;
+}
+
+
+
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+::-webkit-scrollbar-track {
+  background: #615f5f;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #ecececda;
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #020202;
+}
+
+.mainBannenr{
+  background-image: url('./../public/mainBanner.png');
+  background-size: cover;
+  background-position: 100% 100%;
+  background-attachment: fixed;
+}
+.gradient1{
+  background: linear-gradient(270deg, rgba(190, 207, 252, 0.5) 0%, rgba(47, 105, 208, 0.5) 100%);
+}
+.gradient2{
+  background: linear-gradient(180deg, #2F69D0 0%, #9EBFF9 100%);
+
+}
